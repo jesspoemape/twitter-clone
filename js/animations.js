@@ -21,6 +21,14 @@ $(document).ready(function() {
              else {
                  $($count).css("color","#999");
              }
+
+             // disable button if tweet is too long 
+             if ((140 - $(this).val().length) <= 0) {
+                $(".button").prop("disabled", true);
+             }
+             else {
+                 $(".button").prop("disabled", false);
+             }
              
          });
 
