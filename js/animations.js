@@ -34,5 +34,20 @@ $(document).ready(function() {
 
      });
 
+     // if its a valid tweet, add the tweet to the top of the stream
+     // i guess we are going to clone the element and change the values then prepend to the stream 
+     $(".button").on("click", function(){
+        var $nTweet = $(".tweet:first").clone();
+
+        $(".fullname", $nTweet).text("Jessica Poémape");
+        $(".username", $nTweet).text("@japoemape");
+        $(".tweet-text", $nTweet).html($(".tweet-compose").val());
+        $(".avatar", $nTweet).attr("src", "img/alagoon.jpg");
+        $(".reply .tweet-compose", $nTweet).attr("placeholder", "Reply to @japoemape");
+
+        $nTweet.prependTo("#stream");
+     });
+
+
 
 });
