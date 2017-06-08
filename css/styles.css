@@ -170,6 +170,7 @@ body {
 
 	.tweet-actions {
 		text-align: right;
+		display: none;
 	}
 		.tweet-actions ul {
 			list-style-type: none;

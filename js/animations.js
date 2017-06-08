@@ -48,6 +48,16 @@ $(document).ready(function() {
         $nTweet.prependTo("#stream");
      });
 
+     //the tweet actions only appear on hover 
+     $(".tweet").hover(
+        function(){
+            $(".tweet-actions", this).show();
+     },
+        function() {
+            $(".tweet-actions", this).hide();
+     }
+     );
+
 
 
 });
