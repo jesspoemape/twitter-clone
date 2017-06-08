@@ -170,7 +170,6 @@ body {
 
 	.tweet-actions {
 		text-align: right;
-		display: none;
 	}
 		.tweet-actions ul {
 			list-style-type: none;
@@ -214,7 +213,6 @@ body {
 	.stats {
 		margin: 12px 0 12px 42px;
 		border-top: 1px solid #e8e8e8;
-		display: none;
 	}
 		.stats, .stats div {
 			box-sizing: border-box;
@@ -256,7 +254,6 @@ body {
 			position: relative;
 			clear: both;
 			padding-left: 43px;
-			display: none;
 		}
 			.reply .avatar {
 				position: absolute;
