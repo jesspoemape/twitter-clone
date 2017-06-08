@@ -58,6 +58,11 @@ $(document).ready(function() {
      }
      );
 
+     // tweet stats only appear on click of tweet 
+     $(".tweet").on("click", function() {
+         $(".stats, .reply", this).slideToggle("slow");
+     });
+
 
 
 });
