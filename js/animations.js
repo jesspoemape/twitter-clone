@@ -10,9 +10,18 @@ $(document).ready(function() {
      // When the user starts typing in the tweet compose area, 
      // start decreasing the character count 
      $(".tweet-compose").keypress(function() {
+         var $count = $("#char-count");
          // update the charcount length by updating the val 
-         $("#char-count").replaceWith(function() {
-             $(".tweet-compose").length;
+         $(this).keyup(function() {
+             $count.text(140 - $(this).val().length);
+
+             if ((140 - $(this).val().length) <= 10) {
+                $($count).css("color","red");
+             }
+             else {
+                 $($count).css("color","#999");
+             }
+             
          });
 
      });
